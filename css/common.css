@@ -1,0 +1,52 @@
+/* Assuming screen size to be full-screen on a laptop screen */
+
+body
+{
+    margin: 0; /* To remove gap on top of the navigation bar*/
+}
+
+/* CSS for the navigation bar START*/
+nav
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "leftSide rightSide";
+
+    background-color: #0e0e0e;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    display: flex;
+}
+ul.leftContent { grid-area: leftSide; }
+ul.rightContent
+{
+    grid-area: rightSide;
+    justify-content: flex-end;
+}
+nav li a
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 2.5vmin;
+    text-decoration: none;
+}
+nav li a:hover
+{
+    background-color: white;
+    color: black;
+}
+nav .selectedTab { background-color: navy; }
+/* CSS for the navigation bar END*/
+
+div#content
+{
+    margin: 1vmin;
+}
