@@ -1,5 +1,15 @@
 /* Assuming screen size to be full-screen on a laptop screen */
 
+@font-face {
+    font-family: Merriweather;
+    src: url("../assets/fonts/Merriweather/Merriweather-Black.ttf") format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: Merriweather;
+    src: url("../assets/fonts/Merriweather/Merriweather-Bold.ttf") format('truetype');
+    font-weight: bold;
+}
 body
 {
     margin: 0; /* To remove gap on top of the navigation bar*/
@@ -14,9 +24,11 @@ nav
     grid-template-areas:
         "leftSide rightSide";
 
+    font-family: Merriweather, sans-serif;
+
     background-color: #0e0e0e;
 }
-nav ul {
+nav div {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -24,21 +36,21 @@ nav ul {
 
     display: flex;
 }
-ul.leftContent { grid-area: leftSide; }
-ul.rightContent
+div.leftContent { grid-area: leftSide; }
+div.rightContent
 {
     grid-area: rightSide;
     justify-content: flex-end;
 }
-nav li a
+nav a
 {
-    display: block;
     color: white;
     text-align: center;
     padding: 2.5vmin;
+    border-right: thin groove white;
     text-decoration: none;
 }
-nav li a:hover
+nav a:hover
 {
     background-color: white;
     color: black;
