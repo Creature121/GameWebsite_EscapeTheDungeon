@@ -8,40 +8,66 @@ Insert image of game (must add health and timer in image) here.
 	<head>
 		<meta charset="UTF-8">
 		<title>Game Page</title>
-		<link type="text/css" rel="stylesheet" href="../assets/icons_fontawesome/css/fontawesome.css">
-		<link type="text/css" rel="stylesheet" href="../assets/icons_fontawesome/css/solid.css">
-		<link type="text/css" rel="stylesheet" href="../css/common.css">
+		<link href="../assets/icons_fontawesome/css/fontawesome.css" rel="stylesheet" type="text/css">
+		<link href="../assets/icons_fontawesome/css/solid.css" rel="stylesheet" type="text/css">
+		<link href="../css/common.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
+
+		<!-- Navigation Bar START -->
 		<nav>
+
+			<!-- leftContent START -->
 			<div class="leftContent">
+
+				<!-- Game Tab START -->
 				<div class="navButton selectedTab">
 					<a href="index.html">
 						Game
-						<i class="fa-solid fa-gamepad" aria-hidden="true"></i>
+						<i aria-hidden="true" class="fa-solid fa-gamepad"></i>
 					</a>
 				</div>
+				<!-- Game Tab END-->
+
+				<!-- Rules Tab START -->
 				<div class="navButton">
 					<a href="rules.html">
 						Rules
-						<i class="fa-solid fa-scroll" aria-hidden="true"></i>
+						<i aria-hidden="true" class="fa-solid fa-scroll"></i>
 					</a>
 				</div>
+				<!-- Rules Tab END -->
+
+				<!-- Leaderboard Tab START -->
 				<div class="navButton">
 					<a href="leaderboard.html">
 						Leader-board
-						<i class="fa-solid fa-list-ol" aria-hidden="true"></i>
+						<i aria-hidden="true" class="fa-solid fa-list-ol"></i>
+					</a>
+				</div>
+				<!-- Leaderboard Tab END -->
+
+			</div>
+			<!-- leftContent END -->
+
+			<!-- rightContent START -->
+			<div class="rightContent">
+				<div class="profile">
+					<span class="profile-content">
+						<i aria-hidden="true" class="fa-solid fa-circle-user"></i>
+						Welcome, Guest.
+					</span>
+				</div>
+				<div class="navButton">
+					<a href="registration.html">
+						Login / Register.
 					</a>
 				</div>
 			</div>
-
-			<div class="rightContent">
-				<div class="navButton selectedTab"><a href="index.html">Game</a></div>
-				<div class="navButton"><a href="rules.html">Rules</a></div>
-				<div class="navButton"><a href="leaderboard.html">Leader-board</a></div>
-			</div>
+			<!-- rightContent END -->
 
 		</nav>
+		<!-- Navigation Bar END -->
 
 		<div id="content">
 			<p>Hey this is the Game Page!</p>

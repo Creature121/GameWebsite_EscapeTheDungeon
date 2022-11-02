@@ -13,33 +13,61 @@ Use a <table> to make the leaderboard board.
 		<link type="text/css" rel="stylesheet" href="../css/common.css">
 	</head>
 	<body>
+
+		<!-- Navigation Bar START -->
 		<nav>
+
+			<!-- leftContent START -->
 			<div class="leftContent">
+
+				<!-- Game Tab START -->
 				<div class="navButton">
 					<a href="index.html">
 						Game
 						<i class="fa-solid fa-gamepad" aria-hidden="true"></i>
 					</a>
 				</div>
+				<!-- Game Tab END-->
+
+				<!-- Rules Tab START -->
 				<div class="navButton">
 					<a href="rules.html">
 						Rules
 						<i class="fa-solid fa-scroll" aria-hidden="true"></i>
 					</a>
 				</div>
+				<!-- Rules Tab END -->
+
+				<!-- Leaderboard Tab START -->
 				<div class="navButton selectedTab">
 					<a href="leaderboard.html">
 						Leader-board
 						<i class="fa-solid fa-list-ol" aria-hidden="true"></i>
 					</a>
 				</div>
+				<!-- Leaderboard Tab END -->
+
 			</div>
+			<!-- leftContent END -->
+
+			<!-- rightContent START -->
 			<div class="rightContent">
-				<div class="navButton"><a href="index.html">Game</a></div>
-				<div class="navButton"><a href="rules.html">Rules</a></div>
-				<div class="navButton selectedTab"><a href="leaderboard.html">Leader-board</a></div>
+				<div class="profile">
+					<span class="profile-content">
+						<i aria-hidden="true" class="fa-solid fa-circle-user"></i>
+						Welcome, Guest.
+					</span>
+				</div>
+				<div class="navButton">
+					<a href="registration.html">
+						Login / Register.
+					</a>
+				</div>
 			</div>
+			<!-- rightContent END -->
+
 		</nav>
+		<!-- Navigation Bar END -->
 
 		<div id="content">
 			<p>Hey this is the Leader-board Page!</p>

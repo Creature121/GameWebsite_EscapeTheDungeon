@@ -46,16 +46,24 @@ div.leftContent {
     grid-area: leftSide;
 }
 
+div.leftContent .navButton {
+    border-right: thin groove white;
+}
+
 div.rightContent {
     grid-area: rightSide;
     justify-content: flex-end;
+}
+
+div.rightContent .navButton {
+    border-left: thin groove white;
 }
 
 nav a {
     color: white;
     text-align: center;
     padding: 2.5vmin;
-    border-right: thin groove white;
+
     text-decoration: none;
 }
 
@@ -68,10 +76,25 @@ nav .selectedTab {
     background-color: navy;
 }
 
+nav div.profile {
+    padding: 1vmin;
+}
+
+nav div.profile .profile-content {
+    color: #f8f8f8;
+    border-radius: 40%;
+    padding: 1.5vmin;
+    background-color: #6c649a;
+    text-align: center;
+    text-decoration: none;
+
+}
+
 /* CSS for the navigation bar END*/
 
 div#content {
     grid-area: content;
+    color: white;
 }
 
 footer {

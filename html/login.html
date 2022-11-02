@@ -3,14 +3,77 @@
 TODO
 Use CSS Grid on div content.
 Look at W3 Signup page for inspiration. Give credit.
+Remove inline styling in div.content.
 -->
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<title>Login Page</title>
+		<link href="../assets/icons_fontawesome/css/fontawesome.css" rel="stylesheet" type="text/css">
+		<link href="../assets/icons_fontawesome/css/solid.css" rel="stylesheet" type="text/css">
 		<link type="text/css" rel="stylesheet" href="../css/common.css">
 	</head>
 	<body>
 
+		<!-- Navigation Bar START -->
+		<nav>
+
+			<!-- leftContent START -->
+			<div class="leftContent">
+
+				<!-- Game Tab START -->
+				<div class="navButton">
+					<a href="index.html">
+						Game
+						<i aria-hidden="true" class="fa-solid fa-gamepad"></i>
+					</a>
+				</div>
+				<!-- Game Tab END-->
+
+				<!-- Rules Tab START -->
+				<div class="navButton">
+					<a href="rules.html">
+						Rules
+						<i aria-hidden="true" class="fa-solid fa-scroll"></i>
+					</a>
+				</div>
+				<!-- Rules Tab END -->
+
+				<!-- Leaderboard Tab START -->
+				<div class="navButton">
+					<a href="leaderboard.html">
+						Leader-board
+						<i aria-hidden="true" class="fa-solid fa-list-ol"></i>
+					</a>
+				</div>
+				<!-- Leaderboard Tab END -->
+
+			</div>
+			<!-- leftContent END -->
+
+			<!-- rightContent START -->
+			<div class="rightContent">
+				<div class="profile">
+					<span class="profile-content">
+						Logging in...
+					</span>
+				</div>
+				<div class="navButton selectedTab">
+					<a href="registration.html">
+						<strong><u>Login</u></strong> / Register.
+					</a>
+				</div>
+			</div>
+			<!-- rightContent END -->
+
+		</nav>
+		<!-- Navigation Bar END -->
+
+		<div id="content">
+			<p>Hey this is the Login Page!</p>
+			<p><a href="registration.html" style="color: white;">No account? Register here.</a></p>
+		</div>
+
+		<footer></footer>
 	</body>
 </html>
