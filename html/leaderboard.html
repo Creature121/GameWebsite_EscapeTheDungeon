@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <!--
 TODO
-Use CSS Grid on div content.
 Use a <table> to make the leaderboard board.
+Give border to table.
+Make table look nicer.
 -->
 <html lang="en">
 	<head>
@@ -11,6 +12,7 @@ Use a <table> to make the leaderboard board.
 		<link type="text/css" rel="stylesheet" href="../assets/icons_fontawesome/css/fontawesome.css">
 		<link type="text/css" rel="stylesheet" href="../assets/icons_fontawesome/css/solid.css">
 		<link type="text/css" rel="stylesheet" href="../css/common.css">
+		<link href="../css/leaderboard.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 
@@ -70,7 +72,79 @@ Use a <table> to make the leaderboard board.
 		<!-- Navigation Bar END -->
 
 		<div id="content">
-			<p>Hey this is the Leader-board Page!</p>
+			<h1>Leader-board Rankings</h1>
+
+			<table class="leaderBoardTable">
+				<caption style="display: none">Leader board</caption>
+				<thead>
+					<tr>
+						<th>
+							Place
+						</th>
+						<th>
+							Name
+						</th>
+						<th>
+							Time Taken
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							First
+						</td>
+						<td>
+							Milan Varughese
+						</td>
+						<td>
+							5:00
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Second
+						</td>
+						<td>
+							Adam X
+						</td>
+						<td>
+							8:00
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Third
+						</td>
+						<td>
+							Eve Y
+						</td>
+						<td>
+							10:00
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p>Fourth</p>
+							<p>Fifth</p>
+							<p>Sixth</p>
+							<p>...</p>
+						</td>
+						<td>
+							<p>ABC</p>
+							<p>DEF</p>
+							<p>GHI</p>
+							<p>...</p>
+						</td>
+						<td>
+							<p>12:00</p>
+							<p>13:00</p>
+							<p>14:00</p>
+							<p>...</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 
 		<footer></footer>

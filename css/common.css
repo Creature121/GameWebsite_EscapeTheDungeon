@@ -18,7 +18,7 @@ body {
     min-height: 100vh;
     background-color: #494949;
     display: grid;
-    grid-template: 1fr 10fr 1fr / 1fr 10fr 1fr;
+    grid-template: 1fr 10fr 1fr / 1fr 5fr 1fr;
     grid-template-areas:
         "navBar navBar navBar"
         ". content ."
@@ -65,6 +65,8 @@ nav a {
     padding: 2.5vmin;
 
     text-decoration: none;
+
+    transition: background-color 250ms, color 250ms;
 }
 
 nav a:hover {
@@ -94,7 +96,13 @@ nav div.profile .profile-content {
 
 div#content {
     grid-area: content;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     color: white;
+    text-align: center;
 }
 
 footer {
