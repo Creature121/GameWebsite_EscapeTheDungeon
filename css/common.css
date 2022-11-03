@@ -1,10 +1,7 @@
 /* Assuming screen size to be full-screen on a laptop screen */
-/* Credit to MDN Web Docs for resources on CSS Flexbox and Grid */
 
-/*
-TODO
-Make NavBar float...
-*/
+/* Credit to MDN Web Docs for resources on CSS Flexbox and Grid */
+/* Credit to Godlik Website for inspiration on color scheme, at link https://preview.themeforest.net/item/godlike-the-game-template/full_screen_preview/17166433?ec_promo=post_cta&ec_unit=primary&_ga=2.34864291.383348613.1667278084-981425549.1667278084 */
 
 @font-face {
     font-family: Merriweather;
