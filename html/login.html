@@ -1,10 +1,5 @@
 <!DOCTYPE html>
-<!--
-TODO
-Use CSS Grid on div content.
-Look at W3 Signup page for inspiration. Give credit.
-Remove inline styling in div.content.
--->
+
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
@@ -12,6 +7,7 @@ Remove inline styling in div.content.
 		<link href="../assets/icons_fontawesome/css/fontawesome.css" rel="stylesheet" type="text/css">
 		<link href="../assets/icons_fontawesome/css/solid.css" rel="stylesheet" type="text/css">
 		<link type="text/css" rel="stylesheet" href="../css/common.css">
+		<link href="../css/registration_login.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 
@@ -70,8 +66,56 @@ Remove inline styling in div.content.
 		<!-- Navigation Bar END -->
 
 		<div id="content">
-			<p>Hey this is the Login Page!</p>
-			<p><a href="registration.html" style="color: white;">No account? Register here.</a></p>
+			<form action="/">
+				<div class="registrationTable">
+					<h1>Login</h1>
+					<p>Please fill in your details to log into your account.</p>
+
+					<hr>
+
+					<table>
+
+
+						<tr>
+							<td>
+								<label for="email">
+									<strong>Email</strong>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input id="email" placeholder="Enter Email" required type="text">
+							</td>
+						</tr>
+
+
+						<tr>
+							<td>
+								<label for="pass">
+									<strong>Password</strong>
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input id="pass" placeholder="Enter Password" required type="password">
+							</td>
+						</tr>
+
+					</table>
+
+					<hr>
+
+					<button class="submitBtn" type="submit">Login</button>
+
+				</div>
+
+				<div class="registrationTable login">
+					<p>Don't have an account? <a href="registration.html">Register here</a>.</p>
+				</div>
+			</form>
+
 		</div>
 
 		<footer></footer>

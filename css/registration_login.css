@@ -1,0 +1,67 @@
+/* Credit ot W3 Schools for the design of th registration and Login Page, at https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_register_form */
+
+div#content {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.registrationTable {
+    padding: 2vmin;
+    background-color: #2b2b2c;
+    text-align: left;
+}
+
+.registrationTable table {
+    width: 100%;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password], .radioInput, input[type=date] {
+    width: 100%;
+    padding: 1.5vmin;
+    display: inline-block;
+    border: none;
+    background: #a6a6a6;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.radioInput {
+    color: #262626;
+}
+
+hr {
+    border: 0.1vmin solid #f1f1f1;
+}
+
+.submitBtn {
+    background-color: #650215;
+    width: 100%;
+    color: white;
+    padding: 1vmin 1.25vmin;
+    border: none;
+    cursor: pointer;
+    opacity: 0.85;
+}
+
+.submitBtn:hover {
+    opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+    color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.login {
+    background-color: #101010;
+    text-align: center;
+}

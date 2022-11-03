@@ -1,6 +1,11 @@
 /* Assuming screen size to be full-screen on a laptop screen */
 /* Credit to MDN Web Docs for resources on CSS Flexbox and Grid */
 
+/*
+TODO
+Make NavBar float...
+*/
+
 @font-face {
     font-family: Merriweather;
     src: url("../assets/fonts/Merriweather/Merriweather-Black.ttf") format('truetype');
@@ -18,7 +23,7 @@ body {
     min-height: 100vh;
     background-color: #494949;
     display: grid;
-    grid-template: 1fr 10fr 1fr / 1fr 5fr 1fr;
+    grid-template: 1fr 15fr 1fr / 1fr 5fr 1fr;
     grid-template-areas:
         "navBar navBar navBar"
         ". content ."
