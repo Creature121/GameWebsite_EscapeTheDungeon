@@ -1,0 +1,20 @@
+.rulesTable {
+    font-family: 'Baloo Tamma', cursive;
+    color: black;
+
+    padding: 2.5vmin;
+    background: #8a8a8a;
+
+    border-radius: 2%;
+}
+
+.rulesTable ol {
+    text-align: left;
+    border: 0.5vmin dashed black;
+    border-radius: 2%;
+}
+
+.rulesTable li {
+    font-size: 3vmin;
+    padding: 2vmin;
+}
