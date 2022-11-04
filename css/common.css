@@ -1,24 +1,37 @@
-/* Assuming screen size to be full-screen on a laptop screen */
+/* CSS that applies to all pages. */
 
-/* Credit to MDN Web Docs for resources on CSS Flexbox and Grid */
-/* Credit to Godlik Website for inspiration on color scheme, at link https://preview.themeforest.net/item/godlike-the-game-template/full_screen_preview/17166433?ec_promo=post_cta&ec_unit=primary&_ga=2.34864291.383348613.1667278084-981425549.1667278084 */
+/*
+** Credit to MDN Web Docs for resources on CSS Flexbox and Grid.
+**
+** Credit to Godlike Website for inspiration on color scheme,
+** at link https://preview.themeforest.net/item/godlike-the-game-template/full_screen_preview/17166433?ec_promo=post_cta&ec_unit=primary&_ga=2.34864291.383348613.1667278084-981425549.1667278084
+*/
 
+
+/* This @font-face is for adding my custom font for common.css to use. */
 @font-face {
     font-family: Merriweather;
     src: url("../assets/fonts/Merriweather/Merriweather-Black.ttf") format('truetype');
     font-weight: normal;
 }
 
+/*
+This @font-face has a similar function as the @font-face above,
+but it gives the bold version of my custom font.
+*/
 @font-face {
     font-family: Merriweather;
     src: url("../assets/fonts/Merriweather/Merriweather-Bold.ttf") format('truetype');
     font-weight: bold;
 }
 
+
 body {
-    margin: 0; /* To remove gap on top of the navigation bar*/
+    margin: 0; /* To remove gap on top of the navigation bar */
     min-height: 100vh;
     background-color: #494949;
+
+    /* Using Grid and it's attributes to dedicate certain parts of the browser screen to certain widgets. */
     display: grid;
     grid-template: 1fr 15fr 1fr / 1fr 5fr 1fr;
     grid-template-areas:
@@ -27,7 +40,7 @@ body {
         "footer footer footer";
 }
 
-/* CSS for the navigation bar START*/
+/* CSS for the navigation bar START */
 nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -41,7 +54,7 @@ nav {
 }
 
 nav div {
-    display: flex;
+    display: flex; /* To collect and align the nav bar tabs easily. */
 }
 
 div.leftContent {
@@ -68,7 +81,9 @@ nav a {
 
     text-decoration: none;
 
+    /* Used transition here to reduce the snappiness of the hover effect; make it seem more fluid.*/
     transition: background-color 250ms, color 250ms;
+
 }
 
 nav a:hover {
@@ -110,4 +125,10 @@ div#content {
 footer {
     grid-area: footer;
     background-color: #92dde1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center;
 }

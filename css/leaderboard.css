@@ -1,4 +1,9 @@
-/* Credit to Dom (dcode) for Table design (at link https://dev.to/dcodeyt/creating-beautiful-html-tables-with-css-428l) */
+/* Custom CSS for leaderboard.html/leaderboard.php */
+
+/*
+** Credit to Dom (dcode) for Table design
+** (at link https://dev.to/dcodeyt/creating-beautiful-html-tables-with-css-428l)
+*/
 
 .leaderBoardTable {
     font-family: sans-serif;
@@ -13,6 +18,7 @@
     padding: 1vmin 1.25vmin;
 }
 
+/* This code is to select only the second column of the table, and give it left and right borders. */
 .leaderBoardTable th:nth-of-type(2), .leaderBoardTable td:nth-of-type(2) {
     border-right: 0.25vmin solid #8a8a8a;
     border-left: 0.25vmin solid #8a8a8a;
@@ -28,26 +34,27 @@
     border-bottom: 0.25vmin solid #8a8a8a;
 }
 
+/* This code is to select only the first row of the table, and give it a gold color. */
 .leaderBoardTable tbody tr:nth-of-type(1) {
     background: radial-gradient(circle, rgba(255, 215, 0, 1) 15%, rgba(204, 172, 0, 1) 75%);
 }
 
+/* This code is to select only the second row of the table, and give it a silver color. */
 .leaderBoardTable tbody tr:nth-of-type(2) {
     background: radial-gradient(circle, rgba(192, 192, 192, 1) 15%, rgba(134, 134, 134, 1) 75%);
 }
 
+/* This code is to select only the third row of the table, and give it a bronze color. */
 .leaderBoardTable tbody tr:nth-of-type(3) {
     background: radial-gradient(circle, rgba(205, 127, 50, 1) 15%, rgba(140, 86, 33, 1) 75%);
 }
 
+/* This code is to select only the last row of the table, and give it an iron color. */
 .leaderBoardTable tbody tr:nth-of-type(4) {
     background: radial-gradient(circle, rgba(161, 157, 148, 1) 15%, rgba(111, 108, 101, 1) 75%);
 }
 
-.leaderBoardTable tbody tr:nth-of-type(even) {
-    background-color: #626262;
-}
-
+/* This code is to make the tiny border line at the bottom of the table. */
 .leaderBoardTable tbody tr:last-of-type {
     border-bottom: 0.5vmin solid #005748;
 }
